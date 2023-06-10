@@ -21,5 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // create api						
 Route::get('get-lazada', [APILazadaController::class,'getLazada']);
 
-
 Route::post('add-product', [APILazadaController::class,'addProduct']);
+// Route::delete('/delete-product/{id}',[APIController::class,'deleteProduct']);			
+// Route::put('/edit-product/{id}',[APIController::class,'editProduct']);			
+Route::post('upload-image',[APILazadaController::class,'uploadImage']);			
